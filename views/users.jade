@@ -1,0 +1,19 @@
+extends layout
+
+
+block content
+  h1= title
+  p User's guide : #{title}
+  //- html. THAT DOT
+  table
+    tr
+      td Hello
+      td yes, it is  
+    each val in users
+      tr
+        td= val
+
+  div this is a dive <span style="font-weight:bold; color: blue;">suprise</span>
+
+  include ../public/index.html
+  
